@@ -3,6 +3,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  --maincolor: #40afdf;
+  --mainfontcolor: white;
 }
 
 .icon {
@@ -31,7 +33,7 @@ body {
   margin-top: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 50px;
 }
 
 .topheader #searchbar {
@@ -52,10 +54,17 @@ body {
   border-radius: 16px;
 }
 
+.topheader .userdropdown {
+  display: flex;
+  margin-left: auto;
+  padding-right: 50px;
+  align-items: center;
+}
+
 .header .topheader img {
   height: 50px;
   width: 50px;
-  padding-right: 20px;
+  padding: 0px 20px;
 }
 
 .header .bottomheader img {
@@ -63,16 +72,54 @@ body {
   width: 100px;
 }
 
+.bottomheader {
+  display: flex;
+  padding: 10px 50px;
+}
+
+.bottomheader .userinfo {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.usermessage {
+  margin: 5px 0px;
+}
+
+.userinfo p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav button {
+  padding: 10px 32px;
+  color: var(--mainfontcolor);
+  background-color: var(--maincolor);
+  border: none;
+  border-radius: 25px;
+  margin: 0px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .sidebar {
   grid-area: 1/1/6/2;
-  background-color: #172554;
+  background-color: var(--maincolor);
 }
 
 .sidebar .title {
   display: flex;
   align-items: center;
   padding-left: 15px;
-  color: white;
+  color: var(--mainfontcolor);
 }
 
 .sidebar .title h1 {
@@ -85,13 +132,13 @@ body {
 }
 
 .sidebar .links {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .sidebar ul {
   list-style: none;
   padding-left: 30px;
-  color: white;
+  color: var(--mainfontcolor);
   margin-bottom: 2.5em;
 }
 
