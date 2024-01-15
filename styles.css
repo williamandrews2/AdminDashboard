@@ -17,7 +17,38 @@ body {
 
 .header {
   grid-area: 1/2/2/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr / 1fr 1fr 1fr;
   background-color: yellow;
+}
+
+.header .searchsection {
+  grid-area: 1/1/2/3;
+  background-color: orange;
+}
+
+.header .namelink {
+  grid-area: 1/3/2/4;
+}
+
+.header .usertitle {
+  grid-area: 2/1/3/3;
+  background-color: purple;
+}
+
+.header .nav {
+  grid-area: 2/3/3/4;
+  background-color: red;
+}
+
+.header .namelink img {
+  height: 75px;
+  width: 75px;
+}
+
+.header .usertitle img {
+  height: 100px;
+  width: 100px;
 }
 
 .sidebar {
