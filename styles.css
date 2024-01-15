@@ -5,6 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   --maincolor: #40afdf;
   --mainfontcolor: white;
+  --backgroundcolor: rgb(237, 237, 237);
 }
 
 .icon {
@@ -14,7 +15,7 @@ body {
 
 .container {
   display: grid;
-  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  grid-template: min(100px, 1fr) repeat(4, 1fr) / repeat(5, 1fr);
 }
 
 .header {
@@ -49,7 +50,7 @@ body {
 .topheader #searchbox {
   width: 80%;
   height: 25px;
-  background-color: lightgray;
+  background-color: var(--backgroundcolor);
   border: none;
   border-radius: 16px;
 }
@@ -156,5 +157,32 @@ body {
 
 .main {
   grid-area: 2/2/6/6;
-  background-color: lime;
+  background-color: var(--backgroundcolor);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.content h2 {
+  margin-left: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  margin: 0px 25px;
+  gap: 10px;
+}
+
+.card {
+  height: 200px;
+  width: 300px;
+  background-color: var(--mainfontcolor);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
