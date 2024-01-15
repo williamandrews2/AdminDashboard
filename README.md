@@ -8,3 +8,5 @@ This Admin Dashboard was created as part of the Odin Project curriculum using bo
 
 ## Known Issues:
 - Not fully mobile responsive. 
+- Sidebar links are not "wired up" yet.
+- Buttons do nothing.
