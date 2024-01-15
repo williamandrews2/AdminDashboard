@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+}
+
+.header {
+  grid-area: 1/2/2/6;
+  background-color: yellow;
+}
+
+.sidebar {
+  grid-area: 1/1/6/2;
+  background-color: aqua;
+}
+
+.main {
+  grid-area: 2/2/6/6;
+  background-color: lime;
+}
