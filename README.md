@@ -1,6 +1,6 @@
 # AdminDashboard
 ## Live Preview
-Live preview can be found (here)[https://williamandrews2.github.io/AdminDashboard/]
+Live preview can be found [here](https://williamandrews2.github.io/AdminDashboard/)
 
 ## Introduction
 
